@@ -1,14 +1,15 @@
 package org.example.exercice4.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Cat {
     private String name;
     private String race;
     private String favoriteMeal;
-    private Date birthDate;
+    private LocalDate birthDate;
 
-    public Cat(String name, String race, String favoriteMeal, Date birthDate) {
+    public Cat(String name, String race, String favoriteMeal, LocalDate birthDate) {
         this.name = name;
         this.race = race;
         this.favoriteMeal = favoriteMeal;
@@ -39,11 +40,11 @@ public class Cat {
         this.favoriteMeal = favoriteMeal;
     }
 
-    public Date getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 }
